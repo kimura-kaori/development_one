@@ -20,7 +20,7 @@
         <td><%= family_environment.birthday %></td>
         <td><%= family_environment.age %></td>
         <td><%= family_environment.family %></td>
-        <td><%= link_to '詳細', user_student_family_environment_path(family_environment.id, student_id: @student.id,user_id: @user.id), class: "btn btn-outline-success"%></td>
+        <td><%= link_to 'show', user_student_family_environment_path(family_environment.id, student_id: @student.id,user_id: @user.id), class: "btn btn-outline-success"%></td>
         <td><%= link_to '編集', edit_user_student_family_environment_path(family_environment.id, student_id: @student.id,user_id: @user.id), class: "btn btn-outline-success" %></td>
       </tr>
     <% end %>
